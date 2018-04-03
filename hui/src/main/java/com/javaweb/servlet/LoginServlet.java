@@ -40,6 +40,8 @@ public class LoginServlet extends HttpServlet {
     }
     out.println(jo.toString());
 
+    // http://127.0.0.1:8086/hui/LoginServlet?username=benz&password=1
+
     out.flush();
     out.close();
   }
