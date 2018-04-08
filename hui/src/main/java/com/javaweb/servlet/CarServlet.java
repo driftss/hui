@@ -127,7 +127,7 @@ public class CarServlet extends HttpServlet {
     car.setPrice(price);
     car.setCreateDate(createDate);
 
-    int count = new CarDao().add(car);
+    int count = new CarDao().modify(car);
     JSONObject jo = new JSONObject();
     jo.put("count", count);
     out.println(jo);
